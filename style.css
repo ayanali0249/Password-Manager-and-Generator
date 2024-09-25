@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    margin-top: 0;
+  }
+  
+  .generator-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkbox-group {
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-container {
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .button-group {
+    margin-bottom: 20px;
+  }
+  
+  .button-group button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #generate-password {
+    background-color: #2ECC40; /* green */
+    color: #fff;
+  }
+  
+  #generate-password:hover {
+    background-color: #1E8655; /* darker green */
+  }
+  
+  #generate-password:active {
+    background-color: #1E8655; /* darker green */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #copy-password {
+    background-color: #2ECC40; /* green */
+    color: #fff;
+  }
+  
+  #copy-password:hover {
+    background-color: #1E8655; /* darker green */
+  }
+  
+  #copy-password:active {
+    background-color: #1E8655; /* darker green */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #add-password {
+    background-color: #2ECC40; /* green */
+    color: #fff;
+  }
+  
+  #add-password:hover {
+    background-color: #1E8655; /* darker green */
+  }
+  
+  #add-password:active {
+    background-color: #1E8655; /* darker green */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #generated-password {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .password-manager-container {
+    margin-top: 20px;
+  }
+  
+  #password-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #password-table th, #password-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #password-table th {
+    background-color: #f0f0f0;
+  }
+  
+  #password-table td {
+    vertical-align: top;
+  }
+  
+  .actions {
+    text-align: center;
+  }
+  
+  .actions button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .copy-password-button {
+    background-color: #3498DB; /* blue */
+    color: #fff;
+  }
+  
+  .copy-password-button:hover {
+    background-color: #2980B9; /* darker blue */
+  }
+  
+  .copy-password-button:active {
+    background-color: #2980B9; /* darker blue */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-password-button {
+    background-color: #3498DB; /* blue */
+    color: #fff;
+  }
+  
+  .edit-password-button:hover {
+    background-color: #2980B9; /* darker blue */
+  }
+  
+  .edit-password-button:active {
+    background-color: #2980B9; /* darker blue */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .delete-password-button {
+    background-color: #3498DB; /* blue */
+    color: #fff;
+  }
+  
+  .delete-password-button:hover {
+    background-color: #2980B9; /* darker blue */
+  }
+  
+  .delete-password-button:active {
+    background-color: #2980B9; /* darker blue */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }

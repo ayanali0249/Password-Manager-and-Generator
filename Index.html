@@ -1,0 +1,62 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator and Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator and Manager</h1>
+        <div class="generator-container">
+            <div class="input-group">
+                <label for="password-length">Password Length:</label>
+                <input type="number" id="password-length" value="12">
+            </div>
+            <div class="checkbox-group">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="include-uppercase" checked>
+                    <label for="include-uppercase">Include Uppercase Letters</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="include-lowercase" checked>
+                    <label for="include-lowercase">Include Lowercase Letters</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="include-numbers" checked>
+                    <label for="include-numbers">Include Numbers</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="include-symbols" checked>
+                    <label for="include-symbols">Include Symbols</label>
+                </div>
+            </div>
+            <div class="button-group">
+                <button id="generate-password">Generate Password</button>
+                <button id="copy-password">Copy</button>
+                <button id="add-password">Add to Password Manager</button>
+            </div>
+            <p id="generated-password"></p>
+        </div>
+        <div class="password-manager-container">
+            <h2>Password Manager</h2>
+            <table id="password-table">
+                <thead>
+                    <tr>
+                        <th>Website</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="password-list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
