@@ -52,11 +52,10 @@ Welcome to the **Password Generator and Manager** project! This application is d
 
 ## Screenshots
 
-![Screenshot 2024-06-30 122225](https://github.com/user-attachments/assets/dee44b0f-defc-48c6-9680-7ab013064498)
+![Screenshot 2024-06-29 202146](https://github.com/user-attachments/assets/1c9a7dab-d357-49de-9f3f-05d8d1069d1f)
 ![Screenshot 2024-06-30 122153](https://github.com/user-attachments/assets/32f9d324-1b04-4c08-b839-737eefff6829)
 *Password generator interface.*
-
-![Screenshot 2024-06-29 202146](https://github.com/user-attachments/assets/1c9a7dab-d357-49de-9f3f-05d8d1069d1f)
+![Screenshot 2024-06-30 122225](https://github.com/user-attachments/assets/dee44b0f-defc-48c6-9680-7ab013064498)
 *Password manager dashboard.*
 
 ## Contributing
