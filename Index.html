@@ -1,15 +1,16 @@
-<!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator and Manager</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Password Generator and Manager</h1>
+        <h1>Password Generator</h1>
+
+        <!-- Password Generator Section -->
         <div class="generator-container">
             <div class="input-group">
                 <label for="password-length">Password Length:</label>
@@ -40,8 +41,15 @@
             </div>
             <p id="generated-password"></p>
         </div>
+
+        <!-- Password Manager Section -->
         <div class="password-manager-container">
             <h2>Password Manager</h2>
+            <div class="import-export-group">
+                <button id="export-passwords">Export Passwords</button>
+                <button id="import-passwords">Import Passwords</button>
+                <input type="file" id="file-input" accept=".json" hidden>
+            </div>
             <table id="password-table">
                 <thead>
                     <tr>
