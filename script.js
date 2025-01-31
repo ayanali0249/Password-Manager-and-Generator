@@ -7,7 +7,9 @@ const includeSymbolsCheckbox = document.getElementById('include-symbols');
 const generatePasswordButton = document.getElementById('generate-password');
 const copyPasswordButton = document.getElementById('copy-password');
 const addPasswordButton = document.getElementById('add-password');
-const passwordTable = document.getElementById('password-table');
+const importButton = document.getElementById('import-passwords');
+const exportButton = document.getElementById('export-passwords');
+const fileInput = document.getElementById('file-input');
 const passwordList = document.getElementById('password-list');
 
 // Initialize password manager from localStorage
@@ -18,10 +20,13 @@ window.onload = function () {
     loadSavedPasswords();
 };
 
-// Add event listeners
+// Event listeners
 generatePasswordButton.addEventListener('click', generatePassword);
 copyPasswordButton.addEventListener('click', copyPassword);
 addPasswordButton.addEventListener('click', addPassword);
+exportButton.addEventListener('click', exportPasswords);
+importButton.addEventListener('click', () => fileInput.click());
+fileInput.addEventListener('change', importPasswords);
 
 // Generate password function
 function generatePassword() {
@@ -151,4 +156,39 @@ function deletePassword(event, website, username) {
     saveToLocalStorage();
 
     row.remove();
+}
+
+// Export passwords as JSON file
+function exportPasswords() {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(passwordManager));
+    const downloadAnchor = document.createElement('a');
+    downloadAnchor.setAttribute("href", dataStr);
+    downloadAnchor.setAttribute("download", "passwords.json");
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    document.body.removeChild(downloadAnchor);
+}
+
+// Import passwords from JSON file
+function importPasswords(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        try {
+            const importedData = JSON.parse(e.target.result);
+            if (Array.isArray(importedData)) {
+                passwordManager = importedData;
+                saveToLocalStorage();
+                loadSavedPasswords();
+                alert("Passwords imported successfully!");
+            } else {
+                alert("Invalid file format!");
+            }
+        } catch (error) {
+            alert("Error reading file!");
+        }
+    };
+    reader.readAsText(file);
 }
