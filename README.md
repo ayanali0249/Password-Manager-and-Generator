@@ -7,7 +7,6 @@ Welcome to the **Password Generator and Manager** project! This application is d
 - **Password Generator**: Generate strong, random passwords with customizable options (length, characters, etc.).
 - **Password Manager**: Securely store and manage your passwords for multiple accounts.
 - **User-Friendly UI**: A modern, sleek design that ensures an exceptional user experience.
-- **Search and Filter**: Quickly find stored passwords using search and filtering options.
 - **Secure Encryption**: All stored passwords are encrypted to maintain privacy and security.
 - **Cross-Platform Compatibility**: Available on Windows, macOS, and Linux.
 - **Export and Import**: Backup and restore your password database securely.
@@ -15,9 +14,9 @@ Welcome to the **Password Generator and Manager** project! This application is d
 ## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python (Flask/Django) or Node.js
-- **Database**: SQLite/MySQL
-- **Encryption**: AES-256 for secure password storage
+- **Backend**: None (Uses Local Storage for Data Persistence)
+- **Database**: Browser Local Storage
+- **Encryption**: None (Consider implementing AES-256 for added security)
 
 ## Installation
 
@@ -27,27 +26,10 @@ Welcome to the **Password Generator and Manager** project! This application is d
     cd password-generator-manager
     ```
 
-2. **Install Dependencies**:
-    - For Python backend:
-        ```bash
-        pip install -r requirements.txt
-        ```
-    - For Node.js backend:
-        ```bash
-        npm install
-        ```
+2. **Run the Application:**:
+   Open the index.html file in any modern web browser.
 
-3. **Run the Application**:
-    - For Python backend:
-        ```bash
-        python app.py
-        ```
-    - For Node.js backend:
-        ```bash
-        npm start
-        ```
-
-4. **Access the Application**:
+3. **Access the Application**:
     Open your browser and navigate to `http://localhost:5000` (or the specified port).
 
 ## Screenshots
@@ -73,8 +55,9 @@ We welcome contributions from the community! To contribute:
 If you have any questions, feedback, or suggestions, feel free to reach out:
 
 - **Email**: ayanali0249@gmail.com
-- **GitHub**: [ayanali0249](https://github.com/ayanali0249)
-
+- **GitHub**: [ayanali0249](https://github.com/ayanali0249)  
+- **LinkedIn**: [ayan-ali0249](https://www.linkedin.com/in/ayan-ali0249)
+- **Istagram**: [ayan_ali_0249](https://www.instagram.com/ayan_ali_0249)
 ---
 
 Thank you for checking out the Password Generator and Manager project! 🚀
