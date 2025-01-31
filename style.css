@@ -1,187 +1,314 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1, h2 {
-    margin-top: 0;
-  }
-  
-  .generator-container {
-    margin-bottom: 20px;
-  }
-  
-  .input-group {
-    margin-bottom: 10px;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .input-group input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  .checkbox-group {
-    margin-bottom: 20px;
-  }
-  
-  .checkbox-container {
-    margin-bottom: 10px;
-  }
-  
-  .checkbox-container input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Main container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+}
+
+/* Heading update */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Generator container */
+.generator-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.input-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Checkbox groups */
+.checkbox-group {
+  margin-bottom: 20px;
+}
+
+.checkbox-container {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #2ECC40; /* Green */
+  color: white;
+}
+
+/* Button hover and active states */
+.button-group button:hover {
+  background-color: #1E8655;
+}
+
+.button-group button:active {
+  background-color: #1E8655;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Generated password */
+#generated-password {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+/* Password manager section */
+.password-manager-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Import & Export Buttons */
+.import-export-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.import-export-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #F39C12; /* Orange */
+  color: white;
+  font-weight: bold;
+}
+
+.import-export-group button:hover {
+  background-color: #D68910; /* Darker Orange */
+}
+
+/* Table */
+#password-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#password-table th, #password-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#password-table th {
+  background-color: #f0f0f0;
+}
+
+.actions {
+  text-align: center;
+}
+
+/* Action buttons in one line */
+.actions {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Action buttons styles */
+.actions button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Button colors in action column */
+.copy-username-button {
+  background-color: #3498DB; /* Blue */
+  color: #fff;
+}
+
+.copy-username-button:hover {
+  background-color: #2980B9;
+}
+
+.copy-username-button:active {
+  background-color: #2980B9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.copy-password-button {
+  background-color: #3498DB; /* Blue */
+  color: #fff;
+}
+
+.copy-password-button:hover {
+  background-color: #2980B9;
+}
+
+.copy-password-button:active {
+  background-color: #2980B9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-button {
+  background-color: #2ECC40; /* Green */
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #1E8655;
+}
+
+.edit-button:active {
+  background-color: #1E8655;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button {
+  background-color: #E74C3C; /* Red */
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #C0392B;
+}
+
+.delete-button:active {
+  background-color: #C0392B;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Button colors in action column */
+.copy-username-button {
+  background-color: #3498DB; /* Blue */
+  color: #fff;
+}
+
+.copy-username-button:hover {
+  background-color: #2980B9;
+}
+
+.copy-username-button:active {
+  background-color: #2980B9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.copy-password-button {
+  background-color: #3498DB; /* Blue */
+  color: #fff;
+}
+
+.copy-password-button:hover {
+  background-color: #2980B9;
+}
+
+.copy-password-button:active {
+  background-color: #2980B9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-button {
+  background-color: #2ECC40; /* Green */
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #1E8655;
+}
+
+.edit-button:active {
+  background-color: #1E8655;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button {
+  background-color: #E74C3C; /* Red */
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #C0392B;
+}
+
+.delete-button:active {
+  background-color: #C0392B;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
   .button-group {
-    margin-bottom: 20px;
+      flex-direction: column;
   }
   
   .button-group button {
-    margin-right: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+      margin-bottom: 10px;
   }
-  
-  #generate-password {
-    background-color: #2ECC40; /* green */
-    color: #fff;
+
+  .import-export-group {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  #generate-password:hover {
-    background-color: #1E8655; /* darker green */
+
+  .import-export-group button {
+      width: 100%;
+      margin-bottom: 10px;
   }
-  
-  #generate-password:active {
-    background-color: #1E8655; /* darker green */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  #copy-password {
-    background-color: #2ECC40; /* green */
-    color: #fff;
-  }
-  
-  #copy-password:hover {
-    background-color: #1E8655; /* darker green */
-  }
-  
-  #copy-password:active {
-    background-color: #1E8655; /* darker green */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  #add-password {
-    background-color: #2ECC40; /* green */
-    color: #fff;
-  }
-  
-  #add-password:hover {
-    background-color: #1E8655; /* darker green */
-  }
-  
-  #add-password:active {
-    background-color: #1E8655; /* darker green */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  #generated-password {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .password-manager-container {
-    margin-top: 20px;
-  }
-  
-  #password-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  #password-table th, #password-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  #password-table th {
-    background-color: #f0f0f0;
-  }
-  
-  #password-table td {
-    vertical-align: top;
-  }
-  
-  .actions {
-    text-align: center;
-  }
-  
-  .actions button {
-    margin: 5px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .copy-password-button {
-    background-color: #3498DB; /* blue */
-    color: #fff;
-  }
-  
-  .copy-password-button:hover {
-    background-color: #2980B9; /* darker blue */
-  }
-  
-  .copy-password-button:active {
-    background-color: #2980B9; /* darker blue */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .edit-password-button {
-    background-color: #3498DB; /* blue */
-    color: #fff;
-  }
-  
-  .edit-password-button:hover {
-    background-color: #2980B9; /* darker blue */
-  }
-  
-  .edit-password-button:active {
-    background-color: #2980B9; /* darker blue */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .delete-password-button {
-    background-color: #3498DB; /* blue */
-    color: #fff;
-  }
-  
-  .delete-password-button:hover {
-    background-color: #2980B9; /* darker blue */
-  }
-  
-  .delete-password-button:active {
-    background-color: #2980B9; /* darker blue */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+}
