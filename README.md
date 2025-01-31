@@ -33,12 +33,11 @@ Welcome to the **Password Generator and Manager** project! This application is d
     Open your browser and navigate to `http://localhost:5000` (or the specified port).
 
 ## Screenshots
-
-![Screenshot 2024-06-29 202146](https://github.com/user-attachments/assets/1c9a7dab-d357-49de-9f3f-05d8d1069d1f)
-![Screenshot 2024-06-30 122153](https://github.com/user-attachments/assets/32f9d324-1b04-4c08-b839-737eefff6829)
+![Screenshot 2025-01-31 152454](https://github.com/user-attachments/assets/f146bed3-8063-4631-9f22-ce03e94341a4)
 *Password generator interface.*
-![Screenshot 2024-06-30 122225](https://github.com/user-attachments/assets/dee44b0f-defc-48c6-9680-7ab013064498)
+![Screenshot 2025-01-31 152532](https://github.com/user-attachments/assets/9979c812-f181-4037-9d7c-2773c9eb76cd)
 *Password manager dashboard.*
+![Screenshot 2025-01-31 152733](https://github.com/user-attachments/assets/61937332-3fee-4bf5-a7ad-844703a20229)
 
 ## Contributing
 
